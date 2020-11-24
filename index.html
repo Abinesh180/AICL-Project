@@ -1,57 +1,270 @@
 <html>
 
 <head>
-    <title>Day Two AICL</title>
-    <!-- <link rel="Stylessheet" href="" -->
-    <!-- <script></script> -->
+    <title></title>
+    <style type="text/css">
+        *{
+          margin: 0;
+          padding: 0;  
+        }
+        body{
+            background-image: url(https://images.pexels.com/photos/1643409/pexels-photo-1643409.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+            background-position: center;
+            background-size: cover;
+            font-family: sans-serif;
+            margin-top: 40px;
+        }
+        .regform{
+            width: 800px;
+            background-color: rgb(0,0,0,0.6);
+            margin:auto;
+            color:#FFFFFF;
+            padding:10px 0px 10px 0px;
+            text-align:center;
+            border-radius:15px 15px 0px 0px;
+        }
+        .main{
+            background-color: rgb(0,0,0,0.6);
+            width: 800px;
+            margin: auto;
+        }
+        form{
+            padding: 10px;
+        }
+        #name{
+            width:100%;
+            height: 100px;
+        }
+        .name{
+            margin-left: 25px;
+            margin-top: 30px;
+            width: 125px;
+            color: white;
+            font-size: 18px;
+            font-weight: 700;
+        }
+        .firstname{
+            position: relative;
+            left: 200px;
+            top: -37px;
+            line-height: 40px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 16px;
+        }
+        .lastname{
+            position: relative;
+            left: 180px;
+            top: -40px;
+            line-height: 40px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 16px;
+            color:#555;
+        }
+        .firstlabel{
+            position: relative;
+            color: E5E5E5;
+            text-transform: capitalize;
+            font-size: 14px;
+            left: -40px;
+            top: -7px;
+            width: 125px;
+        }
+        .lastlabel{
+            position: relative;
+            color: E5E5E5;
+            text-transform: capitalize;
+            font-size: 14px;
+            left: -60px;
+            top: -7px;
+            width: 125px;
+        }
+        .company{
+            position: relative;
+            left: 200px;
+            top: -37px;
+            line-height: 40px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 16px;
+            color:#555;
+            width: 380px;
+        }
+        .email{
+            position: relative;
+            left: 200px;
+            top: -37px;
+            line-height: 40px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 16px;
+            color:#555;
+            width: 380px;
+        }
+        .code{
+            position: relative;
+            left: 200px;
+            top: -37px;
+            line-height: 40px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 16px;
+            color:#555;
+            width: 125px;
+        }
+        .number{
+            position: relative;
+            left: 130px;
+            top: -37px;
+            line-height: 40px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 16px;
+            color:#555;
+            width: 220px;
+        }
+        .area-code{
+            position: relative;
+            color: E5E5E5;
+            text-transform: capitalize;
+            font-size: 16px;
+            left: 80px;
+            top: -4px;
+            
+        }
+        .phone-number{
+            position: relative;
+            color: E5E5E5;
+            text-transform: capitalize;
+            font-size: 14px;
+            left: -100px;
+            top: -4px;
+           
+        }
+        .option{
+            position: relative;
+            left: 200px;
+            top: -37px;
+            line-height: 40px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 16px;
+            color:#555;
+            width: 380px;
+            outline: none;
+            overflow: hidden;
+            height: 40px;
+        }
+        .option option{
+            font-size: 20px;
+        }
+        #customer{
+            margin-left: 25px;
+            color:white;
+            font-size: 18px;
+        }    
+        .radio{
+            display: inline-block;
+            padding-right: 70px;
+            font-size: 25px;
+            margin-left: 25px;
+            margin-top: 0px;
+            color: white;
+        }
+        .radio input{
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            cursor: pointer;
+            outline: none;
+        }
+        .student{
+            color: white;
+            font-size: 16px;
+            position: relative;
+            left: 0px;
+            top: 0px;
+            line-height: 40px;
+            border-radius: 6px;
+            padding: 0 22px;
+        }    
+        button{
+            background-color: steelblue;
+            display: block;
+            margin:20px 0px 0px 20px;
+            text-align: ce;
+            border-radius: 12px;
+            border: 2px solid #366473;
+            padding: 14px 110px;
+            outline: none;
+            color: white;
+            cursor: pointer;
+            transition: 0.25px;
+        }    
+            
+        
+        button:hover{
+            background-color: slateblue;
+        }
+        
+
+
+
+    </style>
 </head>
 
 <body>
-    <!--
-            Comments in HTML
-Typograph in HTML
-List in HTML
-Anchor tag in HTML
-        -->
-    <!-- Header Tags -->
-    <h1>Hello</h1>
-    <h2>Hello</h2>
-    <h3>Hello</h3>
-    <h4>Hello</h4>
-    <h5>Hello</h5>
-    <h6>Hello</h6>
-    <!-- Other Typography Types -->
+    <div class="regform"><h1>Registrtion Form</h1></div>
+    <div class="main">
+        <form>
+            <div id="name">
+                <h2 class="name">Name</h2>
+                <input class="firstname" type="text" name="First_name"required>
+                <label class="Firstlabel">First name</label>
+                <input class="Lastname" type="text" name="Last_name"required>
+                <label class="Lastlabel">Last name</label>
+            </div>
 
-    <b>Test</b>
-    <i>test</i>
-    <u>Test</u>
-    <!-- Ordered List -->
-    <ol>
-        <li>Test</li>
+            <h2 class="name">Company</h2>
+            <input class="Company" type="text" name="Company"required>
 
-        <li>Test</li>
-        <li>Test</li>
-        <li>Test</li>
-    </ol>
-    <!-- undordered list -->
-    <ul>
-        <li>Test</li>
-        <li>Test</li>
+            <h2 class="name">Email</h2>
+            <input class="email" type="email" name="email"required>
+
+            <h2 class="name">Phone</h2>
+            <input class="Code" type="text" name="Area_code"required>
+            <label class="area-code">Region code</label>
+            <input class="number" type="number" name="phone"required>
+            <label class="phone-number">Phone Number</label>
+
+            <h2 class="name">Subject</h2>
+            <select class="option" name="subject">
+                <option disabled="disabled" selected="selected">Choose Option </option>
+                <option>Machine Learning</option>
+                <option>Data Science</option>
+                <option>Cyber Security</option>
+            </select>
+
+            <h2 class="student">Are You Beginner ?</h2>
+            <label class="radio">
+                <input class="radio-one" type="radio" name="">
+                <span class="checkmark"></span>
+                yes
+            </label>
+            <label class="radio">
+                <input class="radio-two" type="radio" name="">
+                <span class="checkmark"></span>
+                no
+            </label>
+
+            <button type="submit">Register</button>
 
 
-        <li>Test</li>
-        <li>Test</li>
-    </ul>
-    <!-- anchor break paragraph -->
+        </form>
 
-    <a href="https://www.amazon.com">Test</a>
-    <!-- <br /> -->
-    <p>hi hello welcome</p>
-    <!-- div tag -->
-    <div>
-        tet
     </div>
-    <!--  -->
+
 </body>
 
 </html>
